@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Dearest Mike ❤️</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+            text-align: center;
+            padding: 50px;
+            color: #fff;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .heart {
+            font-size: 100px;
+            color: red;
+            animation: beat 1s infinite;
+        }
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        .btn {
+            background-color: #fff;
+            color: #ff4d6d;
+            padding: 15px 30px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #ff4d6d;
+            color: #fff;
+        }
+        .message, .reasons {
+            margin-top: 30px;
+            display: none;
+            font-size: 1.3em;
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi Mike ❤️</h1>
+    <div class="heart">💖</div>
+    <p>I have something special for you...</p>
+    <button class="btn" onclick="showMessage()">Reveal My Heart</button>
+    
+    <div class="message" id="message">
+        <p><strong>To my dearest Mike,</strong></p>
+        <p>
+            You are the light of my world, and you’ve made me the happiest person alive.
+            You make me feel seen, heard, accepted, and deeply loved.
+            If you ever think you’re unlovable, too much, or childish—you’re wrong.
+            You’re the one who brings out the best in me and makes me smile every single day.
+        </p>
+        <p>
+            Honestly, words will never be enough, but like we talked about earlier, I hope you truly felt everything I said.
+            And I hope this message puts that big smile on your cute baby face.
+        </p>
+        <p>
+            I love you so much, my dearest Mike. Happy Monthsary again! 💕
+        </p>
+        <button class="btn" onclick="showReasons()">See 7 Reasons Why I Love You</button>
+    </div>
+
+    <div class="reasons" id="reasons">
+        <h2>7 Reasons Why I Love You 💕</h2>
+        <ul>
+            <li>You make me feel safe and loved every day.</li>
+            <li>Your laughter is my favorite sound in the world.</li>
+            <li>You accept every part of me without judgment.</li>
+            <li>You support me through everything, no matter what.</li>
+            <li>You bring light and happiness into my life effortlessly.</li>
+            <li>You make even the simplest moments unforgettable.</li>
+            <li>You are, and always will be, my greatest blessing.</li>
+        </ul>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
+        }
+        function showReasons() {
+            document.getElementById('reasons').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
